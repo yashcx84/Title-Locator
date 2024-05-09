@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --font-head: 'Inter Tight', sans-serif;
+  --font-para: 'Open Sans', sans-serif;
+  --font-space: 'Space Grotesk', sans-serif;
+  --font-default: 'Gilroy', sans-serif;
+  --font-subHead: 'Roboto', sans-serif
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b1b1b;
+  color: #fff;
+  font-family: var(--font-default)
+}
+
+button {
+  border: none;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.2em;
+  font-family: var(--font-default);
+  font-weight: 600;
+  transition: all 0.2s ease-in-out
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.85);
+}
+
+.myContainer {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}
+
+.myContainer input {
+  width: 400px;
+  margin-block: 44px;
+  padding: 24px;
+}
+
+.dataContainer {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.dataContainer .dataCard {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffffff17;
+  padding: 20px;
+  border-radius: 24px;
+  gap: 12px;
+  flex-grow: 1;
+}
+
+.dataCard p {
+  font-family: var(--font-para);
+  width: 100%;
+}
+
+.dataCard p:first-child {
+  font-size: 1.4em;
+  font-family: var(--font-head);
+  font-weight: bold;
+}
+
+.dataCard p:nth-child(2) {
+  font-size: 0.8em;
+  color: #ffb732;
+  font-family: var(--font-space);
+}
+
+.dataCard p:nth-child(3) {
+  font-weight: 700;
+  font-family: var(--font-default);
+}
+
+.dataCard p:nth-child(4) {
+  font-family: var(--font-para);
+  margin-bottom: 16px;
+}
